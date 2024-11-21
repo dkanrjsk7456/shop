@@ -162,3 +162,6 @@ document.addEventListener('click', function(e) {
       addToCart(productId, name, price, imageUrl);
     }
   });
+
+
+  

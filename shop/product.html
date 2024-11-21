@@ -79,31 +79,18 @@
 								<div>
 									<a href="#" id="voice-search-btn">
 										<i class="fa fa-microphone"></i>
-										<span>음성 검색</span>
+										<span>음성</span>
 									</a>
 								</div>
 								<!-- /Voice Search -->
 
 								<!-- Cart -->
 								<div class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+									<a href="cart.html">
 										<i class="fa fa-shopping-cart"></i>
 										<span>장바구니</span>
 										<div class="qty" id="cart-count">0</div>
 									</a>
-									<div class="cart-dropdown">
-										<div class="cart-list" id="cart-items">
-											<!-- 장바구니 아이템들이 여기에 동적으로 추가됩니다 -->
-										</div>
-										<div class="cart-summary">
-											<small><span id="cart-item-count">0</span> 개의 상품</small>
-											<h5>합계: $<span id="cart-total">0.00</span></h5>
-										</div>
-										<div class="cart-btns">
-											<a href="cart.html">장바구니 보기</a>
-											<a href="checkout.html">결제하기 <i class="fa fa-arrow-circle-right"></i></a>
-										</div>
-									</div>
 								</div>
 								<!-- /Cart -->
 
@@ -137,10 +124,10 @@
 					<ul class="main-nav nav navbar-nav">
 						<li><a href="index.html">메인</a></li>
 						<li><a href="index.html#hot-deal">인기 상품</a></li>
-						<li><a href="index.html#laptops">노트북</a></li>
-						<li><a href="index.html#cameras">카메라</a></li>
-						<li><a href="index.html#pc">PC</a></li>
-						<li><a href="index.html#accessories">주변장치</a></li>
+						<li><a href="index.html#NEW">NEW</a></li>
+						<li><a href="index.html#board">PC</a></li>
+						<li><a href="index.html#graphics">PC 부품</a></li>
+						<li><a href="index.html#PC">주변 기기</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -157,13 +144,7 @@
 				<!-- row -->
 				<div class="row">
 					<div class="col-md-12">
-						<ul class="breadcrumb-tree">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">All Categories</a></li>
-							<li><a href="#">Accessories</a></li>
-							<li><a href="#">Headphones</a></li>
-							<li class="active">Product name goes here</li>
-						</ul>
+						<h3 class="breadcrumb-header">상품 정보</h3>
 					</div>
 				</div>
 				<!-- /row -->
@@ -186,7 +167,7 @@
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/product03.png" alt="">
+								<img src="./img/product0.png" alt="">
 							</div>
 
 							<div class="product-preview">
@@ -208,7 +189,7 @@
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/product03.png" alt="">
+								<img src="./img/product0.png" alt="">
 							</div>
 
 							<div class="product-preview">
@@ -225,62 +206,46 @@
 					<!-- Product details -->
 					<div class="col-md-5">
 						<div class="product-details">
-							<h2 class="product-name">product name goes here</h2>
+							<h2 class="product-name">GIGABYTE 지포스 RTX 4090 AERO OC D6X 24GB</h2>
+							
 							<div>
-								<div class="product-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-o"></i>
-								</div>
-								<a class="review-link" href="#">10 Review(s) | Add your review</a>
+								<h3 class="product-price">₩3,150,000  
 							</div>
-							<div>
-								<h3 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h3>
-								<span class="product-available">In Stock</span>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p>NVIDIA® GeForce RTX™ 4090은 궁극의 GeForce GPU입니다. 이는 성능, 효율성, 그리고 AI 기반 그래픽에서 엄청난 도약을 보여줍니다. 초고성능 게이밍, 믿을 수 없을 정도로 상세한 가상 세계, 전례 없는 생산성 및 새로운 제작 방법을 경험하세요. NVIDIA Ada Lovelace 아키텍처를 기반으로 게이머와 크리에이터 모두에게 궁극의 경험을 선사하기 위한 24GB G6X 메모리를 갖췄습니다.</p>
 
 							<div class="product-options">
-								<label>
-									Size
-									<select class="input-select">
-										<option value="0">X</option>
-									</select>
-								</label>
+								
 								<label>
 									Color
 									<select class="input-select">
-										<option value="0">Red</option>
+										<option value="0">선택</option>
+										<option value="0">White</option>
+										<option value="0">Black</option>
 									</select>
 								</label>
 							</div>
 
 							<div class="add-to-cart">
 								<div class="qty-label">
-									Qty
+									 수량
 									<div class="input-number">
-										<input type="number">
+										<input type="number" value="1">
 										<span class="qty-up">+</span>
 										<span class="qty-down">-</span>
 									</div>
 								</div>
-								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+								<button class="add-to-cart-btn" data-id="1" data-name="GIGABYTE 지포스 RTX 4090 AERO OC D6X 24GB" data-price="3150000" data-image="./img/product01.png"><i class="fa fa-shopping-cart"></i> add to cart</button>
 							</div>
 
-							<ul class="product-btns">
-								<li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
+							
+
+							<ul class="product-links">
+								<li>카테고리:</li>
+								<li><a href="#">그래픽카드</a></li>
 							</ul>
 
 							<ul class="product-links">
-								<li>Category:</li>
-								<li><a href="#">Headphones</a></li>
-								<li><a href="#">Accessories</a></li>
-							</ul>
-
-							<ul class="product-links">
-								<li>Share:</li>
+								<li>공유:</li>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -290,6 +255,8 @@
 						</div>
 					</div>
 					<!-- /Product details -->
+
+					
 
 					<!-- Product tab -->
 					<div class="col-md-12">

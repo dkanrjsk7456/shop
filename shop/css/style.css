@@ -856,9 +856,11 @@ textarea.input {
 	product
 \*----------------------------*/
 
+
+
 .product {
   position: relative;
-  margin: 15px 0px;
+  margin: 20px 0px;
   -webkit-box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
   box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
   -webkit-transition: 0.2s all;
@@ -1468,6 +1470,50 @@ textarea.input {
 /*----------------------------*\
 	Product details
 \*----------------------------*/
+
+.product-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.product-name .truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.product-name .full-name {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease, top 0.3s ease;
+  pointer-events: none;
+}
+
+.product:hover .product-name .truncate {
+  opacity: 0;
+}
+
+.product:hover .product-name .full-name {
+  opacity: 1;
+  top: 0;
+}
+
+
+
 
 .product-details .product-name {
   text-transform: uppercase;
